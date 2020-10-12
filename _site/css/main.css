@@ -16,6 +16,10 @@ header, main, footer {
   flex-shrink: 0;
 }
 
+header {
+  
+}
+
 main {
   min-height: 100%;
 }
