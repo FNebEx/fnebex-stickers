@@ -1,0 +1,21 @@
+---
+layout: default.liquid
+cssPath: "./css/main.css"
+---
+
+      {% comment %} {{ sticker.fields.Image[0].url }} {% endcomment %}
+
+<h1>fnebex stickers</h1>
+<div class="row">
+    {% for sticker in stickers %}
+    <div class="col-lg-3">
+      <div class="sticker-wrapper">
+        <div class="sticker-body">
+          <img class="img-fluid" src="{{ sticker.fields.Image[0].url }}" alt="">
+          <h5>{{ sticker.fields.Name }}</h5>
+          <a class="btn btn-primary" href="#">Buy</a>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+</div>

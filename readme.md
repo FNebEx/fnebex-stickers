@@ -6,3 +6,5 @@
 * Get sticker info from Airtable
 * Set up Snipcart information
   * Test snipcart
+* Add checkout
+* Make Buttons Responsive

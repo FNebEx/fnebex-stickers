@@ -30,3 +30,23 @@ header {
 main {
   min-height: 100%;
 }
+
+/* sticker card */
+.sticker-wrapper {
+  width: 100%;
+}
+
+.sticker-body {
+  width: 100%;
+}
+
+.sticker-body > img {
+  height: 221px;
+  margin-bottom: 14px;
+}
+
+.sticker-body > a {
+  background-color: #1968c2;
+  color: white;
+  width: 100%;
+}
