@@ -13,7 +13,16 @@ cssPath: "./css/main.css"
         <div class="sticker-body">
           <img class="img-fluid" src="{{ sticker.fields.Image[0].url }}" alt="">
           <h5>{{ sticker.fields.Name }}</h5>
-          <a class="btn btn-primary" href="#">Buy</a>
+          <h5>{{ sticker.fields.Price | append: "0" | | prepend: '$'}}</h5>
+          <h5>{{ sticker.id}}</h5>
+          <button class="btn snipcart-add-item"
+            data-item-id="{{ sticker.id }}"
+            data-item-name="{{ sticker.fields.Name }}"
+            data-item-price="{{ sticker.fields.Price | append: '0' }}"
+            data-item-url="/"
+            data-item-image="{{ sticker.fields.Image[0].url }}"
+          >Buy
+          </button>
         </div>
       </div>
     </div>

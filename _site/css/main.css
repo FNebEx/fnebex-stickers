@@ -38,6 +38,7 @@ main {
 
 .sticker-body {
   width: 100%;
+  padding: 20px 10px;
 }
 
 .sticker-body > img {
@@ -45,7 +46,12 @@ main {
   margin-bottom: 14px;
 }
 
-.sticker-body > a {
+.sticker-body > h5 {
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+.sticker-body > button {
   background-color: #1968c2;
   color: white;
   width: 100%;
